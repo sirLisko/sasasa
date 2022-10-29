@@ -1,0 +1,38 @@
+.cards {
+  @media (min-width: 850px) {
+    display: flex;
+  }
+}
+
+.splash {
+  padding: 1rem;
+  font-size: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (min-width: 850px) {
+    min-height: 700px;
+    font-size: 2rem;
+  }
+  h1 {
+    font-family: var(--font-header);
+    font-size: 2rem;
+    line-height: 1;
+    @media (min-width: 550px) {
+      font-size: 4rem;
+    }
+  }
+  :global(.logo):hover {
+    :global(.plettro1) {
+      transform: rotate(360deg)
+    }
+    :global(.plettro2) {
+      transform: rotate(-360deg)
+    }
+  }
+}
+
+
+
+.blurp {
+  font-size: 1rem;
+}

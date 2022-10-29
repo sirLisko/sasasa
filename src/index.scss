@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'neue_metanabold';
+  src: url('../fonts/neuemetana-bold-webfont.woff2') format('woff2'),
+    url('../fonts/neuemetana-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_metanaregular';
+  src: url('../fonts/neuemetana-regular-webfont.woff2') format('woff2'),
+    url('../fonts/neuemetana-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-main: 'Montserrat', sans-serif;
+  --font-header: "neue_metanabold", serif;
+  --font-header--normal: "neue_metanaregular", serif;
+  --color-main: #2D2B24;
+  --color-primary: #F6E6CB;
+  --color-kubi: #FFCF03;
+  --color-menodue: #B3D728;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-main);
+  background-color: var(--color-main);
+  color: var(--color-primary);
+}
+
+a {
+  color: currentColor;
+}
+
+.logo {
+  margin-right: 1rem;
+
+  svg {
+    width: 50px;
+    height: 49px;
+  }
+
+  .plettro1,
+  .plettro2 {
+    transition: all 1s ease;
+    transform-origin: 50% 50%;
+    transition: transform 7s ease;
+    transform: rotate(0deg)
+  }
+}
