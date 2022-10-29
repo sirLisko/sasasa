@@ -21,9 +21,9 @@ const Home = () => {
         </p>
         <p>
           Sa Sa Sa S.r.l. is a company in Milan. We have two studios with
-          soundproof rehearsal rooms that you can rent by the hour. We also
-          provide other services like recordings and equipment rental. You can
-          find updated information on our websites.
+          soundproof rehearsal rooms you can rent by the hour. We also provide
+          other services like recordings and equipment rental. You can find
+          updated information on our websites.
         </p>
       </div>
       <div className={styles.cards}>
@@ -34,7 +34,7 @@ const Home = () => {
           subtitle="Soundlab"
           link="https://www.kubisoundlab.com/"
           socials={{
-            fb: "https://www.facebook.com/kubi.soundlab",
+            fb: "https://linktr.ee/kubi_soundlab",
             in: "https://www.instagram.com/kubi_soundlab/",
           }}
         />
@@ -45,7 +45,7 @@ const Home = () => {
           subtitle="Studio"
           link="https://www.menoduestudio.com/"
           socials={{
-            fb: "https://www.facebook.com/menoduestudio",
+            fb: "https://linktr.ee/menodue",
             in: "https://www.instagram.com/menoduestudio/",
           }}
         />
