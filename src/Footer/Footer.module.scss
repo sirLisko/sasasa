@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem;
   font-size: 0.75rem;
-  & img {
-    height: 75px;
-  }
+}
+.credits {
+  margin-top: 0.5rem;
 }
