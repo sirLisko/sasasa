@@ -1,4 +1,5 @@
 import styles from "./Footer.module.scss";
+import { CgHeart } from "react-icons/cg";
 
 const Footer = () => (
   <div className={styles.footer}>
@@ -8,7 +9,7 @@ const Footer = () => (
       Milano - Capitale sociale 10.000€
     </div>
     <div className={styles.credits}>
-      Made with ♥ by{" "}
+      Made with <CgHeart /> by{" "}
       <a href="https://sirlisko.com">Luca Lischetti (@sirLisko)</a>
     </div>
   </div>
