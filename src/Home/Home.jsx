@@ -1,8 +1,10 @@
 import styles from "./Home.module.scss";
 import { ReactComponent as Logo } from "../logo.svg";
 import Card from "../Card/Card";
+import useLang from "../hooks/useLang";
 
 const Home = () => {
+  const lang = useLang();
   return (
     <div className={styles.splash}>
       <h1>
@@ -12,19 +14,22 @@ const Home = () => {
         Sa Sa Sa s.r.l.
       </h1>
       <div className={styles.blurp}>
-        <p>
-          Sa Sa Sa S.r.l. è una società di Milano che dispone di due studi con
-          sale prova insonorizzate ad affitto orario. Effettua inoltre altri
-          servizi in ambito musicale come registrazioni e noleggio
-          strumentazione. Puoi trovare informazioni aggiornate sui siti web dei
-          nostri studi.
-        </p>
-        <p>
-          Sa Sa Sa S.r.l. is a company in Milan. We have two studios with
-          soundproof rehearsal rooms you can rent by the hour. We also provide
-          other services like recordings and equipment rental. You can find
-          updated information on our websites.
-        </p>
+        {lang === "it" ? (
+          <p>
+            Sa Sa Sa S.r.l. è una società di Milano che dispone di due studi con
+            sale prova insonorizzate ad affitto orario. Effettua inoltre altri
+            servizi in ambito musicale come registrazioni e noleggio
+            strumentazione. Puoi trovare informazioni aggiornate sui siti web
+            dei nostri studi.
+          </p>
+        ) : (
+          <p>
+            Sa Sa Sa S.r.l. is a company in Milan. We have two studios with
+            soundproof rehearsal rooms you can rent by the hour. We also provide
+            other services like recordings and equipment rental. You can find
+            updated information on our websites.
+          </p>
+        )}
       </div>
       <div className={styles.cards}>
         <Card
